@@ -5,23 +5,20 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: var(--testColor3);
+    background-color: var(--bg-light);
 }
 :root{
-    --bg-light: #25a18e;
-    --bg-dark: #0a1f24;
-    --text-light: #ffffff;
-    --text-dark: #0a1f24;
-    --hover-color: #94b4eb;
+    --bg-dark: #660000;
+    --bg-light: #ffe6e6;
+    --text-dark: #2d0000;
+    --text-light: #ffe6e6;
+    --hover-color: #ffb3d1;
     --fontDancing: 'Dancing Script';
     --fontGreat: 'Great Vibes';
     --fontGaba: 'Gabarito';
     --fontPoppins: 'Poppins';
     --fontAgba: 'Agbalumo';
     --fontTrig: 'Trirong';
-    --testColor: #002e4d;
-    --testColor2: #30715c;
-    --testColor3: #80ccff;
 }
 .title {
     font-family: var(--fontGreat);
@@ -31,7 +28,7 @@ body {
     padding-left: 1em;
 }
 .navbar-content {
-    background-color: var(--testColor);
+    background-color: var(--bg-dark);
 }   
 .navbar-content ul, li {
     margin: 0;
