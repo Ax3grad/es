@@ -67,3 +67,36 @@ body {
 .link a:hover {
     color: var(--hover-color);
 }
+
+/* TOOLTIP */
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+.tooltiptext {
+    visibility: hidden;
+    font-family: var(--fontGaba);
+    color: var(--text-dark);
+    background-color: var(--bg-light);
+    width: 120px;
+    text-align: center;
+    padding: 3px 5px;
+    border: 3px solid;
+    border-color: var(--bg-dark);
+    border-radius: 10px;
+
+    position: absolute;
+    z-index: 1;
+    bottom: -17%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
