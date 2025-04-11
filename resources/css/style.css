@@ -25,17 +25,27 @@ body {
     --fontAgba: 'Agbalumo';
     --fontTrig: 'Trirong';
 }
-.title {
-    font-family: var(--fontGreat);
+.logo {
+    display: flex;
+    align-items: center;
+}
+.logo img {
+    height: 60px;
+}
+/* .title {
+    font-family: var(--fontGreat);      NO NEED TO ADD TITLE FOR NOW ON NAVBAR (LOGO IMAGE ALREADY ON DISPLAY)
     font-size: 25px;
     color: var(--text-light);
-    margin-top: 1.1em;
-    padding-left: 1em;
-}
+    margin-left: 1em;
+}*/
 .navbar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1em;
     background-color: var(--bg-dark);
 }   
-.navbar-content ul, li {
+.navbar-content ul{
     margin: 0;
     padding: 0;
     display: flex;
@@ -56,4 +66,21 @@ body {
 }
 .link a:hover {
     color: var(--hover-color);
+}
+
+@media (max-width: 768px) {
+    .navbar-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-content ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar-content a {
+        padding: 1em;
+        width: 100%;
+    }
 }
